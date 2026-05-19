@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
     --color-white: #fff;
@@ -252,11 +254,17 @@
   .h-400 {
     height: calc(var(--spacing) * 400);
   }
+  .h-\[1\] {
+    height: 1;
+  }
   .h-\[2\] {
     height: 2;
   }
   .h-\[6\] {
     height: 6;
+  }
+  .h-\[20px\] {
+    height: 20px;
   }
   .h-\[50px\] {
     height: 50px;
@@ -270,6 +278,9 @@
   .h-\[100\%\] {
     height: 100%;
   }
+  .h-\[100px\] {
+    height: 100px;
+  }
   .h-\[200px\] {
     height: 200px;
   }
@@ -279,8 +290,14 @@
   .h-\[250px\] {
     height: 250px;
   }
+  .h-\[270px\] {
+    height: 270px;
+  }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[350px\] {
+    height: 350px;
   }
   .h-\[400\] {
     height: 400;
@@ -321,8 +338,14 @@
   .h-\[1000px\] {
     height: 1000px;
   }
+  .h-\[1100px\] {
+    height: 1100px;
+  }
   .h-\[1200px\] {
     height: 1200px;
+  }
+  .h-\[1300px\] {
+    height: 1300px;
   }
   .h-\[2000px\] {
     height: 2000px;
@@ -426,6 +449,9 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[430px\] {
+    width: 430px;
+  }
   .w-\[500px\] {
     width: 500px;
   }
@@ -455,6 +481,9 @@
   }
   .max-w-\[85\%\] {
     max-width: 85%;
+  }
+  .max-w-\[1200px\] {
+    max-width: 1200px;
   }
   .max-w-\[1300\] {
     max-width: 1300;
@@ -540,6 +569,9 @@
   .rounded-\[10px\] {
     border-radius: 10px;
   }
+  .rounded-\[15px\] {
+    border-radius: 15px;
+  }
   .rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -607,6 +639,22 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+  .border-l-3 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 3px;
+  }
+  .border-l-8 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 8px;
+  }
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
@@ -626,6 +674,15 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
+  .border-l-\[red\] {
+    border-left-color: red;
+  }
+  .border-l-red-50 {
+    border-left-color: var(--color-red-50);
+  }
+  .border-l-red-500 {
+    border-left-color: var(--color-red-500);
+  }
   .bg-\[\#061B3A\] {
     background-color: #061B3A;
   }
@@ -643,6 +700,9 @@
   }
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
+  }
+  .bg-\[aqua\] {
+    background-color: aqua;
   }
   .bg-\[az\] {
     background-color: az;
@@ -760,6 +820,12 @@
   }
   .pr-\[10px\] {
     padding-right: 10px;
+  }
+  .pb-\[0px\] {
+    padding-bottom: 0px;
+  }
+  .pb-\[20px\] {
+    padding-bottom: 20px;
   }
   .pb-\[50px\] {
     padding-bottom: 50px;
@@ -961,6 +1027,11 @@
       height: 250px;
     }
   }
+  .lg\:h-\[350px\] {
+    @media (width >= 64rem) {
+      height: 350px;
+    }
+  }
   .lg\:h-\[400px\] {
     @media (width >= 64rem) {
       height: 400px;
@@ -1074,6 +1145,11 @@
   .lg\:w-\[350px\] {
     @media (width >= 64rem) {
       width: 350px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
     }
   }
   .lg\:w-\[470px\] {
