@@ -566,6 +566,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-\[0px_0px_10px_10px\] {
+    border-radius: 0px 0px 10px 10px;
+  }
   .rounded-\[1\] {
     border-radius: 1;
   }
@@ -577,6 +580,9 @@
   }
   .rounded-\[10px\] {
     border-radius: 10px;
+  }
+  .rounded-\[10px_10px_0px_0px\] {
+    border-radius: 10px 10px 0px 0px;
   }
   .rounded-\[15px\] {
     border-radius: 15px;
@@ -805,6 +811,12 @@
   }
   .p-\[50px_20px\] {
     padding: 50px 20px;
+  }
+  .p-\[50px_100px_25px_50px\] {
+    padding: 50px 100px 25px 50px;
+  }
+  .p-\[50px_100px_50px_50px\] {
+    padding: 50px 100px 50px 50px;
   }
   .py-\[30px\] {
     padding-block: 30px;
@@ -1271,6 +1283,16 @@
       gap: 150px;
     }
   }
+  .lg\:rounded-\[0px_10px_10px_0px\] {
+    @media (width >= 64rem) {
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+  .lg\:rounded-\[10px_0px_0px_10px\] {
+    @media (width >= 64rem) {
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
   .lg\:p-\[50px_0px\] {
     @media (width >= 64rem) {
       padding: 50px 0px;
@@ -1309,6 +1331,11 @@
   .lg\:text-\[16px\] {
     @media (width >= 64rem) {
       font-size: 16px;
+    }
+  }
+  .lg\:text-\[18px\] {
+    @media (width >= 64rem) {
+      font-size: 18px;
     }
   }
   .lg\:text-\[40px\] {
